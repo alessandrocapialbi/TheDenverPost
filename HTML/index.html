@@ -5,23 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../CSS/style.css" rel="stylesheet">
-    <script src="../JS/scripts.js"></script>
 </head>
 <body>
 <nav class="nav-primary">
     <div>
-        <a href="index.html"><img class="logo" src="../images/logo.png" alt="The Denver Post"></a>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
     </div>
+    <span>All Sections</span>
+        <div>
+            <a href="index.html"><img class="logo" src="../images/logo.png" alt="The Denver Post"></a>
+        </div>
     <ul class="nav-list" id="navi-list">
         <li class="list-item"><a href="#">Subscribe</a></li>
         <li class="list-item"><a href="#">Log In</a></li>
     </ul>
     <div class="menu" id="toggle-button">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
     </div>
 </nav>
 </body>
+<script>const toggleButton = document.getElementById('toggle-button');
+const naviList = document.getElementById('navi-list')
+toggleButton.addEventListener('click', () => {
+    naviList.classList.toggle('active');
+})</script>
 
 </html>
