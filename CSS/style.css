@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Droid Sans", Helvetica, sans-serif;;
 }
 
 
@@ -21,10 +22,8 @@ html {
 }
 
 
-.logo {
+.nav__logo {
     width: 53%;
-    position: relative;
-    left: 27%;
 }
 
 .nav-list {
@@ -33,17 +32,25 @@ html {
 
 .nav-list .list-item {
     display: inline-block;
-    margin-left: 20px;
-    padding: 10px 10px;
+    margin-left: 10px;
+    padding: 5px 5px;
 }
 
 .nav-primary a {
-    color: black;
     text-decoration: none;
 }
 
+.right-nav-bar {
+    text-decoration: inherit;
+    border-radius: 4px;
+    color: white;
+    background-color: #7d161e;
+    padding: 8px;
+}
+
 .nav-primary a:hover {
-    color: crimson;
+    background-color: red;
+    text-decoration: underline;
 }
 
 .menu {
@@ -57,10 +64,11 @@ html {
     margin-bottom: 4px;
 }
 
-span{
+span {
     font-size: 12px;
     padding-right: 0.25rem;
 }
+
 @media all and (max-width: 480px) {
     .nav-primary {
         flex-direction: column;
