@@ -36,6 +36,43 @@ html {
     padding: 5px 5px;
 }
 
+.pushnav-flex {
+    order: 1;
+    width: 33%;
+}
+
+.pushnav {
+    overflow: hidden;
+    height: 4em;
+}
+
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: 0.9375rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.icon-hamburger::before{
+    content: "";
+    width: 10px;
+}
+
+.icon-hamburger::after{
+    content: "";
+    width: 10px;
+}
+
+.logo {
+    order: 2;
+}
+
+.sub-login {
+    order: 3;
+}
+
 .nav-primary a {
     text-decoration: none;
 }
@@ -48,7 +85,7 @@ html {
     padding: 8px;
 }
 
-.nav-primary a:hover {
+.right-nav-bar:hover {
     background-color: red;
     text-decoration: underline;
 }
