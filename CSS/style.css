@@ -14,26 +14,16 @@ html {
     background-color: white;
     color: black;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 18px;
+    flex-direction: row;
     width: 100%;
     height: 4em;
-}
-
-
-.nav__logo {
-    width: 53%;
-}
-
-.nav-list {
-    list-style-type: none;
-}
-
-.nav-list .list-item {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 5px 5px;
+    border-bottom: 1px solid #9d9a98;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .25);
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 2147483637;
 }
 
 .pushnav-flex {
@@ -42,6 +32,7 @@ html {
 }
 
 .pushnav {
+    display: block;
     overflow: hidden;
     height: 4em;
 }
@@ -55,39 +46,86 @@ html {
     cursor: pointer;
 }
 
-.icon-hamburger::before{
-    content: "";
-    width: 10px;
+#icon-hamburger {
+    padding-right: 0.25rem;
 }
 
-.icon-hamburger::after{
-    content: "";
-    width: 10px;
+.label {
+    font: normal 600 0.9375em/1.0666666667 "Droid Sans", Helvetica, sans-serif;
+    padding-left: 0.25rem;
+    color: #0a0908;
+}
+
+.custom-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    position: relative;
 }
 
 .logo {
     order: 2;
+    width: 33%;
+    align-self: center;
+    font: normal 600 0.9375em/1.0666666667 "Droid Sans", Helvetica, sans-serif;
+}
+
+.nav__logo {
+    margin: 0 auto;
+    max-height: 3em;
+    width: 100%;
+    object-fit: contain;
 }
 
 .sub-login {
     order: 3;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 15%;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-item {
+    display: block;
+}
+
+.menu-item {
+    width: 8em;
+    display: block;
+    margin-left: 1em;
+    background-color: #7d161e;
+    color: #fff;
+    text-align: center;
+    padding: 7% 5%;
+    border-radius: 4px;
+    font: normal 600 0.9375em/1.7333333333 "Droid Sans", Helvetica, sans-serif;
+}
+
+.menu-item:hover {
+    background-color: red;
+    text-decoration: underline;
+}
+
+.search-icon {
+    display: flex;
+    order: 4;
+    width: 4%;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9375rem;
+    cursor: pointer;
 }
 
 .nav-primary a {
     text-decoration: none;
-}
-
-.right-nav-bar {
-    text-decoration: inherit;
-    border-radius: 4px;
-    color: white;
-    background-color: #7d161e;
-    padding: 8px;
-}
-
-.right-nav-bar:hover {
-    background-color: red;
-    text-decoration: underline;
 }
 
 .menu {
@@ -106,7 +144,14 @@ span {
     padding-right: 0.25rem;
 }
 
-@media all and (max-width: 480px) {
+
+@media (min-width: 65em) {
+    .nav-primary {
+        height: 4em;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .nav-primary {
         flex-direction: column;
     }
@@ -145,6 +190,4 @@ span {
     .active {
         display: block;
     }
-
-
 }
