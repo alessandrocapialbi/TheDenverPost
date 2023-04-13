@@ -8,30 +8,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav class="nav-primary">
-    <div class="pushnav-flex">
-        <nav class="pushnav">
-            <div class="menu-toggle" aria-label="Open sections menu">
-                <span class="fa fa-bars" id="icon-hamburger" aria-hidden="true"></span>
-                <span class="label">All Sections</span>
+<div class="header-placeholder">
+    <header>
+        <nav class="nav-primary">
+            <div class="pushnav-flex">
+                <nav class="pushnav">
+                    <div class="menu-toggle" aria-label="Open sections menu">
+                        <span class="fa fa-bars" id="icon-hamburger" aria-hidden="true"></span>
+                        <span class="label">All Sections</span>
+                    </div>
+                </nav>
+            </div>
+            <div class="logo">
+                <h1 class="custom-logo"><a href="index.html"><img class="nav__logo" src="../images/logo.png"
+                                                                  alt="The Denver Post"></a></h1>
+            </div>
+            <div class="sub-login">
+                <ul class="nav-list" id="navi-list">
+                    <li class="list-item"><a class="menu-item" href="#">Subscribe</a></li>
+                    <li class="list-item"><a class="menu-item" href="#">Log In</a></li>
+                </ul>
+            </div>
+            <div class="search-icon">
+                <span class="fa fa-fw fa-search" role="button"></span>
+            </div>
+
+            <!--
+            <div class="header-banners">
+                <section class="breaking-bar">
+                    <section class="breaking-bar-inner">
+                        <h2 class="widget">Breaking News</h2>
+                    </section>
+
+                </section>
+
+
+            </div>
+               -->
+            <div class="menu" id="toggle-button">
             </div>
         </nav>
-    </div>
-    <div class="logo">
-        <h1 class="custom-logo"><a href="index.html"><img class="nav__logo" src="../images/logo.png" alt="The Denver Post"></a></h1>
-    </div>
-    <div class="sub-login">
-    <ul class="nav-list" id="navi-list">
-        <li class="list-item"><a class="menu-item" href="#">Subscribe</a></li>
-        <li class="list-item"><a class="menu-item" href="#">Log In</a></li>
-    </ul>
-    </div>
-    <div class="search-icon">
-           <span class="fa fa-fw fa-search" role="button"></span>
-    </div>
-    <div class="menu" id="toggle-button">
-    </div>
-</nav>
+    </header>
+</div>
 </body>
 <script>const toggleButton = document.getElementById('toggle-button');
 const naviList = document.getElementById('navi-list')

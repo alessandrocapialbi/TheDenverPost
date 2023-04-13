@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.header-placeholder {
+    display: block;
+}
+
 .nav-primary {
     background-color: white;
     color: black;
@@ -139,15 +143,44 @@ html {
     margin-bottom: 4px;
 }
 
-span {
-    font-size: 12px;
-    padding-right: 0.25rem;
+.breaking-bar {
+    background-color: #7d161e;
+    color: #fff;
+    align-items: center;
+    border: 0;
+    display: flex;
+    margin-bottom: 1em;
+    min-height: 2.1875em;
+    padding: 0em 0.625em;
+    width: 100%;
+}
+
+.breaking-bar-inner {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.breaking-bar h2 {
+    background-color: transparent;
+    color: #0a0908;
+    font-size: 1.125em;
+    flex: 0 0 8.6111111111em;
+    min-width: 8.8888888889em;
+    padding: 0;
+    position: static;
 }
 
 
 @media (min-width: 65em) {
     .nav-primary {
         height: 4em;
+    }
+
+    .header-placeholder {
+        height: 14rem;
     }
 }
 
