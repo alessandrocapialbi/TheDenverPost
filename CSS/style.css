@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Droid Sans", Helvetica sans-serif;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 
@@ -15,6 +15,7 @@ a{
     text-decoration: none;
 }
 
+
 .nav-primary {
     background-color: white;
     color: black;
@@ -22,7 +23,7 @@ a{
     position: fixed;
     overflow: hidden;
     width: 100%;
-    height: 64px;
+    height: 4em;
     border-bottom: 1px solid #9d9a98;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .25);
 }
@@ -58,7 +59,7 @@ a{
 
 .sub-login {
     width: 30%;
-    margin-top: 19px;
+    margin-top: 15px;
 }
 
 .sub-login span {
@@ -66,7 +67,7 @@ a{
 }
 
 .list-item {
-    margin-left: 100px;
+    margin-left: 175px;
 }
 
 .menu-item {
@@ -91,19 +92,19 @@ a{
 
 .container {
     max-width: 955px;
-    margin: 0 auto;
+    margin-left: 8em;
 }
 
 
 .grid {
     display: grid;
-    grid-template-columns: 300px 300px auto;
+    grid-template-columns: 2fr 2fr auto;
     column-gap: 20px;
     row-gap: 30px;
 }
 
 .grid-1 {
-    padding-bottom: 1rem;
+
 }
 
 .h2-text {
@@ -122,6 +123,9 @@ a{
 .grid-3 {
     font-weight: bold;
     grid-row-end: span 3;
+}
+
+.grid-3 p{
 }
 
 .grid-3 div{
