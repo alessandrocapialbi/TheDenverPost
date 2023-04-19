@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Droid Sans", Helvetica sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 html {
@@ -16,6 +16,26 @@ a {
 
 a:hover {
     color: #7d161e;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li:before{
+    content: counter(item);
+    background-color: #7d161e;
+    color: white;
+    font-weight: bolder;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.6em;
+    font-size: 20px;
 }
 
 
@@ -59,7 +79,7 @@ a:hover {
 
 .sub-login {
     width: 30%;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .sub-login span {
@@ -67,12 +87,10 @@ a:hover {
 }
 
 .list-item {
-    margin-left: 175px;
+    float: right;
 }
 
 .menu-item {
-    width: 6.65em;
-    height: 26px;
     background-color: #7d161e;
     color: #fff;
     text-align: center;
@@ -93,34 +111,38 @@ a:hover {
 .container {
     max-width: 955px;
     margin-left: 8em;
-    margin-right: 10em;
 }
 
 
 .grid {
     display: grid;
-    grid-template-columns: 2fr 2fr auto;
+    grid-template-columns: 300px 300px auto;
     column-gap: 20px;
-    row-gap: 30px;
+    row-gap: 15px;
 }
 
-.grid-1 {
-
+.grid-1 div{
+    line-height: 16px;
 }
 
-.a-text {
-    font-size: 20px;
-    text-align: center !important;
+.grid-1 .grid-2{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 25px;
+}
+
+.header-text{
+    font-size: 25px;
+}
+
+.header-bold-text {
+    font-size: 25px;
+    text-align: center;
     font-weight: bolder;
 }
 
 .centered {
     text-align: center;
 }
-
-.grid-2 {
-}
-
 
 .grid-3 {
     grid-row-end: span 3;
@@ -142,26 +164,27 @@ a:hover {
 .newsletter {
     background-color: lightgray;
     text-align: center;
+    height: 222px;
 }
 
 .newsletter-item {
+    height: 100px;
     border-bottom: 1px solid #fff;
 }
 
 .prompt {
     color: #0a0908;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .sign-up {
     background-color: #7d161e;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 2rem;
     border-radius: 4px;
     color: #fff;
     padding: 0.8125em 1.0625em;
     text-shadow: 0 0 1px #7d161e;
-    text-transform: uppercase;
     transition: background-color 100ms linear, color 100ms linear;
 }
 
@@ -200,15 +223,19 @@ a:hover {
     padding: 0 5px 2px 5px;
 }
 
-.grid-5 {
-
+.grid-2{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
-.grid-6 {
-
+.grid2-item-1{
+    background-color: chocolate;
 }
 
-.grid-7 {
-
+.grid2-item-2{
+    background-color: green;
 }
+
 
