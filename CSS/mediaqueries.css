@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .menu-item {
+        display: none;
+    }
+
+    .user {
+        display: block;
+        width: 60px;
+        height: 40px;
+    }
+
+    .primary-grid{
+
+    }
+
+    .mainimg {
+        width: 100%;
+        height: auto;
+    }
+}

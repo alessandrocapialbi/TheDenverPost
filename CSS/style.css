@@ -25,6 +25,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.user {
+    display: none;
+}
+
 .container a {
     text-decoration: none;
 }
@@ -76,6 +80,7 @@ ul.counter li:before {
     background-color: white;
     color: black;
     display: flex;
+    justify-content: space-between;
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -86,7 +91,6 @@ ul.counter li:before {
 }
 
 .menu-toggle {
-    width: 33%;
     display: flex;
     align-items: center;
     padding: 0.9375rem;
@@ -99,7 +103,6 @@ ul.counter li:before {
 }
 
 .logo {
-    width: 33%;
     height: auto;
     align-self: center;
 }
@@ -112,7 +115,6 @@ ul.counter li:before {
 }
 
 .sub-login {
-    width: 30%;
     margin-top: 20px;
 }
 
@@ -121,6 +123,9 @@ ul.counter li:before {
 }
 
 .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     float: right;
 }
 
@@ -138,27 +143,31 @@ ul.counter li:before {
     text-decoration: underline;
 }
 
-.final-div {
-    width: 4%;
-}
-
 .container {
     max-width: 955px;
-    margin-left: 8em;
+    margin: 0 auto;
 }
 
-.grid {
+.primary-grid {
     display: grid;
-    grid-template-columns: 300px 300px auto;
+    grid-template-columns: 1fr 300px;
+    column-gap: 20px;
+
+}
+
+.second-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 15px;
 }
 
 
-.grid-1 .grid-2 {
+.grid-1, .grid-2 {
     border-bottom: 1px solid #000000;
     padding-bottom: 25px;
 }
+
 
 .header-text {
     font-size: 25px;
@@ -174,20 +183,20 @@ ul.counter li:before {
     text-align: center !important;
 }
 
-.grid-3 {
+.grid-a {
     grid-row-end: span 3;
 }
 
-.grid-3 a {
+.grid-a a {
     font-weight: bold;
 }
 
-.grid-3 div, .grid-2 div {
+.grid-a div, .grid-2 div {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.grid-3 span {
+.grid-a span {
     border-bottom: 2px solid #7d161e;
 }
 
@@ -265,9 +274,9 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 60px;
-    margin-left: 4em;
+    margin: 0 4em;
 }
 
 .footer-logo {
