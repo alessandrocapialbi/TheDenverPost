@@ -25,11 +25,11 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+.container a {
     text-decoration: none;
 }
 
-a:hover {
+.container a:hover {
     color: #7d161e;
 }
 
@@ -82,6 +82,7 @@ ul.counter li:before {
     height: 4em;
     border-bottom: 1px solid #9d9a98;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .25);
+    z-index: 1;
 }
 
 .menu-toggle {
@@ -146,7 +147,6 @@ ul.counter li:before {
     margin-left: 8em;
 }
 
-
 .grid {
     display: grid;
     grid-template-columns: 300px 300px auto;
@@ -182,7 +182,7 @@ ul.counter li:before {
     font-weight: bold;
 }
 
-.grid-3 div, .grid-2 div{
+.grid-3 div, .grid-2 div {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -255,10 +255,19 @@ h1 {
 }
 
 
+footer {
+    padding-top: 2em;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ababab;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.35) inset;
+}
+
+
 .footer-grid {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
-    column-gap: 20px;
+    column-gap: 60px;
+    margin-left: 2em;
 }
 
 .footer-logo {
@@ -266,17 +275,19 @@ h1 {
     margin: 0 2.5%;
 }
 
-.footer-list-item{
+.footer-list-item {
     margin-top: 15px;
     margin-bottom: 15px;
     border-top: 2px solid black;
 }
 
-.footer-menu-item{
-    display: flex;
-    flex-direction: column;
+.footer-menu-item {
     margin: 8px 1% 0 1%;
     padding-top: 0.5em;
+}
+
+.footer-activities:hover{
+    text-decoration: underline;
 }
 
 
