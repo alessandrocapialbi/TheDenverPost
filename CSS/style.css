@@ -2,8 +2,23 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Droid Sans", Helvetica sans-serif;
+    font-family: "Droid Sans", Helvetica, sans-serif;
     font-size: 20px;
+}
+
+@font-face {
+    font-family: DroidSans;
+    src: url("fonts/DroidSans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: DroidSerif;
+    src: url("fonts/DroidSerif.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url("fonts/SourceSansPro.ttf") format("truetype");
 }
 
 html {
@@ -18,11 +33,29 @@ a:hover {
     color: #7d161e;
 }
 
-ul{
+ul {
     list-style-type: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
-li:before{
+li {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+ul.counter li {
+    counter-increment: item;
+    position: relative;
+    list-style: none;
+    font-size: 16px;
+    display: inline-flex;
+    padding: 1em 0 0.3em 0;
+}
+
+li:before {
     content: counter(item);
     background-color: #7d161e;
     color: white;
@@ -121,16 +154,13 @@ li:before{
     row-gap: 15px;
 }
 
-.grid-1 div{
-    line-height: 16px;
-}
 
-.grid-1 .grid-2{
+.grid-1 .grid-2 {
     border-bottom: 1px solid #000000;
     padding-bottom: 25px;
 }
 
-.header-text{
+.header-text {
     font-size: 25px;
 }
 
@@ -141,7 +171,7 @@ li:before{
 }
 
 .centered {
-    text-align: center;
+    text-align: center !important;
 }
 
 .grid-3 {
@@ -152,7 +182,7 @@ li:before{
     font-weight: bold;
 }
 
-.grid-3 div {
+.grid-3 div, .grid-2 div {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -162,13 +192,13 @@ li:before{
 }
 
 .newsletter {
-    background-color: lightgray;
+    background-color: #f1efeb;
     text-align: center;
-    height: 222px;
+    height: 250px;
 }
 
 .newsletter-item {
-    height: 100px;
+    height: 120px;
     border-bottom: 1px solid #fff;
 }
 
@@ -223,19 +253,11 @@ li:before{
     padding: 0 5px 2px 5px;
 }
 
-.grid-2{
-    display: grid;
-    grid-template-columns: 300px 300px;
-    column-gap: 10px;
-    row-gap: 10px;
+h1 {
+    color: #7d161e;
+    border-bottom: 2px solid #7d161e;
 }
 
-.grid2-item-1{
-    background-color: chocolate;
-}
 
-.grid2-item-2{
-    background-color: green;
-}
 
 
