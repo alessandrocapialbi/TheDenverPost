@@ -35,15 +35,13 @@ a:hover {
 
 ul {
     list-style-type: none;
+}
+
+ul.counter {
+    list-style-type: none;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-}
-
-li {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 20px;
 }
 
 ul.counter li {
@@ -53,9 +51,11 @@ ul.counter li {
     font-size: 16px;
     display: inline-flex;
     padding: 1em 0 0.3em 0;
+    font-weight: bold;
+    line-height: 20px;
 }
 
-li:before {
+ul.counter li:before {
     content: counter(item);
     background-color: #7d161e;
     color: white;
@@ -182,7 +182,7 @@ li:before {
     font-weight: bold;
 }
 
-.grid-3 div, .grid-2 div {
+.grid-3 div, .grid-2 div{
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -232,10 +232,6 @@ li:before {
     opacity: 0.7;
 }
 
-.grid-4 {
-
-}
-
 .articles {
     font-weight: bold;
 }
@@ -257,6 +253,32 @@ h1 {
     color: #7d161e;
     border-bottom: 2px solid #7d161e;
 }
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap: 20px;
+}
+
+.footer-logo {
+    width: 80%;
+    margin: 0 2.5%;
+}
+
+.footer-list-item{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 2px solid black;
+}
+
+.footer-menu-item{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 1% 0 1%;
+    padding-top: 0.5em;
+}
+
 
 
 
