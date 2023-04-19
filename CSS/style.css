@@ -267,7 +267,7 @@ footer {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     column-gap: 60px;
-    margin-left: 2em;
+    margin-left: 4em;
 }
 
 .footer-logo {
@@ -286,8 +286,20 @@ footer {
     padding-top: 0.5em;
 }
 
-.footer-activities:hover{
+.footer-activities:hover {
     text-decoration: underline;
+}
+
+.legal {
+    margin-top: 20px;
+    border-top: 1px solid #ababab;
+    padding: 0 20px 20px;
+}
+
+.legal a, .legal span {
+    padding: 0 10px;
+    color: gray;
+    font-size: 15px;
 }
 
 
