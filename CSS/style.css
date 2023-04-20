@@ -146,23 +146,22 @@ ul.counter li:before {
 
 .container {
     max-width: 955px;
-    margin: 0 auto;
+    margin-left: 10em;
 }
 
 .primary-grid {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 1fr auto;
     column-gap: 20px;
 
 }
 
-.second-grid {
+.central-news-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 15px;
 }
-
 
 .grid-1, .grid-2 {
     border-bottom: 1px solid #000000;
@@ -184,20 +183,20 @@ ul.counter li:before {
     text-align: center !important;
 }
 
-.grid-a {
+.latest-headlines-grid {
     grid-row-end: span 3;
 }
 
-.grid-a a {
+.latest-headlines-grid a{
     font-weight: bold;
 }
 
-.grid-a div, .grid-2 div {
+.latest-headlines-grid div, .grid-2 div {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.grid-a span {
+.latest-headlines-grid span, .election-grid span {
     border-bottom: 2px solid #7d161e;
 }
 
@@ -220,7 +219,6 @@ ul.counter li:before {
 .sign-up {
     background-color: #7d161e;
     font-size: 15px;
-    margin-top: 2rem;
     border-radius: 4px;
     color: #fff;
     padding: 0.8125em 1.0625em;
@@ -239,7 +237,7 @@ ul.counter li:before {
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.2;
 }
 
 .articles {
@@ -259,11 +257,28 @@ ul.counter li:before {
     padding: 0 5px 2px 5px;
 }
 
+
+.election-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.election-grid a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.election-grid span{
+    font-weight: bold;
+}
+
+
 h1 {
     color: #7d161e;
     border-bottom: 2px solid #7d161e;
 }
-
 
 footer {
     padding-top: 2em;
@@ -289,7 +304,7 @@ footer {
 }
 
 .footer-list-item {
-    margin: 30px 10px 30px 10px;
+    margin: 20px 10px 20px 10px;
 }
 
 .footer-menu-item {
