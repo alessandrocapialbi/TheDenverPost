@@ -15,7 +15,9 @@
     }
 
     .primary-grid{
-
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        margin: 0 10px;
+        column-gap: 10px;
     }
 
     .mainimg {

@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: "Droid Sans", Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 @font-face {
@@ -133,6 +133,7 @@ ul.counter li:before {
     background-color: #7d161e;
     color: #fff;
     text-align: center;
+    text-decoration: none;
     padding: 0.5901875em 0.41875em 0.5901875em 0.41875em;
     border-radius: 4px;
     font: normal 600 0.9375em/1.7333333333 "Droid Sans", Helvetica, sans-serif;
@@ -271,28 +272,32 @@ footer {
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.35) inset;
 }
 
-
 .footer-grid {
     display: grid;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 60px;
     margin: 0 4em;
 }
 
+.footer-grid-1 {
+    grid-column-end: span 4;
+}
+
 .footer-logo {
-    width: 80%;
-    margin: 0 2.5%;
+    width: 20%;
 }
 
 .footer-list-item {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-top: 2px solid black;
+    margin: 30px 10px 30px 10px;
 }
 
 .footer-menu-item {
-    margin: 8px 1% 0 1%;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
     padding-top: 0.5em;
+    margin: 10px 10px;
 }
 
 .footer-activities:hover {
@@ -308,7 +313,7 @@ footer {
 .legal a, .legal span {
     padding: 0 10px;
     color: gray;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 
