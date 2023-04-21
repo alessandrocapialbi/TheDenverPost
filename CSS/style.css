@@ -164,6 +164,11 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
+.grid-4 div, .grid-6 div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .grid-1, .grid-2 {
     border-bottom: 1px solid #000000;
     padding-bottom: 25px;
