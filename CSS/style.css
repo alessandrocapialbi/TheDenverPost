@@ -25,7 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.user, .grid-1-responsive-img {
+.user, .grid-1-responsive-img, .responsive-election-img-div {
     display: none;
 }
 

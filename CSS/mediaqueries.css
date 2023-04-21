@@ -4,11 +4,7 @@
         margin: 0 5px;
     }
 
-    .menu-item {
-        display: none;
-    }
-
-    .grid-2 {
+    .menu-item, .grid-2, .election-img-div {
         display: none;
     }
 
@@ -16,6 +12,18 @@
         display: flex;
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .responsive-election-img-div {
+        display: block;
+        border-top: 2px solid #7d161e;
+    }
+
+    .election-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 15px;
     }
 
     .user {
