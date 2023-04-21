@@ -31,6 +31,7 @@ html {
 
 .container a {
     text-decoration: none;
+    color: black;
 }
 
 .container a:hover {
@@ -187,7 +188,7 @@ ul.counter li:before {
     grid-row-end: span 3;
 }
 
-.latest-headlines-grid a{
+.latest-headlines-grid a {
     font-weight: bold;
 }
 
@@ -196,7 +197,7 @@ ul.counter li:before {
     padding-bottom: 10px;
 }
 
-.latest-headlines-grid span, .election-grid span {
+.latest-headlines-grid span {
     border-bottom: 2px solid #7d161e;
 }
 
@@ -247,7 +248,7 @@ ul.counter li:before {
 .subscriber-only-tag {
     font-family: SourceSansPro, Helvetica, sans-serif;
     color: white;
-    font-size: 10px;
+    font-size: 16px;
     line-height: 22px;
     font-weight: bold;
     background-color: #7d161e;
@@ -258,20 +259,21 @@ ul.counter li:before {
 }
 
 
-.election-grid{
+.election-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 15px;
 }
 
-.election-grid a{
-    font-size: 20px;
-    font-weight: 500;
+
+.election-grid div {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.election-grid span{
-    font-weight: bold;
+.election-img-div {
+    border-top: 2px solid #7d161e;
 }
 
 
