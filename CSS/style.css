@@ -164,7 +164,7 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
-.grid-4 div, .grid-6 div{
+.grid-4 div, .grid-6 div {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -271,6 +271,15 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
+.election-grid-1 span a, .election-grid-2 span a, .election-grid-3 span a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fa-chevron-right {
+    color: #7d161e;
+}
+
 
 .election-grid div {
     padding-top: 20px;
@@ -292,6 +301,11 @@ footer {
     background-color: #f5f5f5;
     border-top: 1px solid #ababab;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.35) inset;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
 }
 
 .footer-grid {
