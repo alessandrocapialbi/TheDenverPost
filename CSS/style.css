@@ -25,7 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.user {
+.user, .grid-1-responsive-img {
     display: none;
 }
 
@@ -147,14 +147,13 @@ ul.counter li:before {
 
 .container {
     max-width: 955px;
-    margin-left: 10em;
+    margin: 0 auto;
 }
 
 .primary-grid {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     column-gap: 20px;
-
 }
 
 .central-news-grid {
