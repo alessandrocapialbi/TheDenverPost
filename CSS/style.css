@@ -25,7 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.user, .grid-1-responsive-img, .responsive-election-img-div {
+.user, .grid-1-responsive-img, .responsive-election-img-div, .grid-1-responsive-img-cell, .responsive-election-img-div-cell {
     display: none;
 }
 
@@ -41,6 +41,7 @@ html {
 ul {
     list-style-type: none;
 }
+
 
 ul.counter {
     list-style-type: none;
@@ -169,7 +170,6 @@ ul.counter li:before {
 }
 
 .grid-1, .grid-2 {
-    border-bottom: 1px solid #000000;
     padding-bottom: 25px;
 }
 
@@ -201,7 +201,7 @@ ul.counter li:before {
     padding-bottom: 10px;
 }
 
-.border{
+.border {
     border-top: 1px solid #d7d6d2;
 }
 
@@ -274,7 +274,7 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
-.election-grid-1 span a, .election-grid-2 span a, .election-grid-3 span a{
+.election-grid-1 span a, .election-grid-2 span a, .election-grid-3 span a {
     font-size: 20px;
     font-weight: 500;
 }
@@ -306,7 +306,7 @@ footer {
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.35) inset;
 }
 
-footer a{
+footer a {
     color: black;
     text-decoration: none;
 }
@@ -347,6 +347,11 @@ footer a{
     margin-top: 20px;
     border-top: 1px solid #ababab;
     padding: 0 20px 20px;
+}
+
+.style-legal {
+    margin-left: 100px;
+    margin-top: 10px;
 }
 
 .legal a, .legal span {
