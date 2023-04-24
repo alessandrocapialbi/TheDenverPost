@@ -201,6 +201,10 @@ ul.counter li:before {
     padding-bottom: 10px;
 }
 
+.border{
+    border-top: 1px solid #d7d6d2;
+}
+
 .latest-headlines-grid span {
     border-bottom: 2px solid #7d161e;
 }

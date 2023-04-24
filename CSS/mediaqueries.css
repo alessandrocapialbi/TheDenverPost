@@ -1,4 +1,4 @@
-@media (min-width:890px) and (max-width:1024px) {
+@media (min-width: 890px) and (max-width: 1024px) {
     .container {
         width: 100%;
         margin: 0 5px;
@@ -44,38 +44,41 @@
 
 @media screen and (max-width: 890px) {
 
-    .container{
+    .container {
         max-width: 637px;
         margin: 0 auto;
     }
 
-    .menu-item{
+    .menu-item {
         display: none;
     }
 
-    .user{
+    .user {
         display: block;
         width: 60px;
         height: 40px;
     }
 
-    .primary-grid{
+    .primary-grid {
         display: grid;
         grid-template-columns: 1fr;
         column-gap: 20px;
 
     }
 
-    .central-news-grid, .election-grid{
+    .election-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
     }
 
-    .latest-headlines-grid{
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
+    .latest-headlines-grid {
+        margin-top: 20px;
     }
+
+    .img-central-grid {
+        width: 40%;
+    }
+
 
 }
