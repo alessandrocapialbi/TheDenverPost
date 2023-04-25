@@ -38,6 +38,10 @@ html {
     color: #7d161e;
 }
 
+.socials a:hover {
+    pointer-events: none;
+}
+
 ul {
     list-style-type: none;
 }
@@ -348,7 +352,7 @@ footer a {
     border-top: 1px solid #ababab;
 }
 
-.style-legal{
+.style-legal {
     margin-top: 10px;
 }
 
