@@ -342,18 +342,18 @@ footer a {
 }
 
 .legal {
-    margin-top: 20px;
-    border-top: 1px solid #ababab;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 20px 20px;
+    border-top: 1px solid #ababab;
 }
 
-.style-legal {
-    margin-left: 100px;
+.style-legal{
     margin-top: 10px;
 }
 
 .legal a, .legal span {
-    padding: 0 10px;
+    padding-right: 10px;
     color: gray;
     font-size: 13px;
 }

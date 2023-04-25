@@ -53,6 +53,31 @@
         width: 100%;
     }
 
+    /*
+    .footer-grid-1 {
+        background-color: red;
+    }
+
+    .footer-grid-2 {
+        background-color: yellow;
+    }
+
+    .footer-grid-3 {
+        background-color: green;
+    }
+
+    .footer-grid-4 {
+        background-color: purple;
+    }
+
+    .footer-grid-5 {
+        background-color: orange;
+    }
+    */
+    .footer-grid-2, .footer-grid-4 {
+        grid-column-end: span 2;
+    }
+
 }
 
 @media screen and (max-width: 890px) {
@@ -91,8 +116,8 @@
     }
 
     .election-grid div {
-        padding-top: 5px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
 
     .responsive-election-img {
@@ -107,6 +132,10 @@
 
     .img-central-grid {
         width: 40%;
+    }
+
+    .footer-grid-2, .footer-grid-4 {
+        grid-column-end: span 2;
     }
 }
 
@@ -130,6 +159,10 @@
     .reverse {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .centered {
+        margin-top: 10px;
     }
 
     .responsive-election-img-div-cell, .grid-1-responsive-img-cell {
@@ -156,10 +189,17 @@
         padding: 0;
     }
 
-    .footer-grid, .style-legal {
+    .footer-grid{
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        line-height: 40px;
+    }
+
+    .style-legal{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
         line-height: 40px;
     }
 
@@ -169,6 +209,7 @@
         font-size: 16px;
         font-weight: 400;
     }
+
 
     .footer-grid-1 {
         display: grid;
