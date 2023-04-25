@@ -1,6 +1,5 @@
 @media (min-width: 890px) and (max-width: 1120px) {
     .container {
-        width: auto;
         margin: 0 20px 0 20px;
     }
 
@@ -8,15 +7,23 @@
         display: none;
     }
 
-    .grid-1-responsive-img {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+    .border-top {
+        display: block;
     }
 
-    .responsive-election-img-div {
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .centered {
+        margin-top: 10px;
+    }
+
+    .responsive-election-img, .grid-1-responsive-img {
         display: block;
-        border-top: 2px solid #7d161e;
+        max-width: 100%;
+        height: auto;
     }
 
 
@@ -27,6 +34,10 @@
         row-gap: 15px;
     }
 
+    .election-grid div {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
 
     .user {
         display: block;
@@ -51,8 +62,12 @@
         margin: 0 20px 0 20px;
     }
 
-    .menu-item {
+    .election-img-div, .menu-item {
         display: none;
+    }
+
+    .border-top {
+        display: block;
     }
 
     .user {
@@ -60,6 +75,7 @@
         width: 60px;
         height: 40px;
     }
+
 
     .primary-grid {
         display: grid;
@@ -72,6 +88,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
+    }
+
+    .election-grid div {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .responsive-election-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .latest-headlines-grid {
@@ -96,7 +123,7 @@
         column-gap: 20px;
     }
 
-    .grid-2, .election-img-div, .responsive-election-img-div, .footer-list-item {
+    .grid-2, .election-img-div, .responsive-election-img, .footer-list-item {
         display: none;
     }
 
@@ -105,21 +132,10 @@
         flex-direction: column-reverse;
     }
 
-    .grid-1-responsive-img-cell {
-        display: grid;
-        justify-items: center;
-        margin-bottom: 10px;
-    }
-
-    .responsive-election-img-div-cell {
-        display: grid;
-        justify-items: center;
-        margin-bottom: 10px;
-        border-top: 2px solid #7d161e;
-    }
-
-    .grid-2 {
-        background-color: red;
+    .responsive-election-img-div-cell, .grid-1-responsive-img-cell {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .grid-1, .grid-3, .grid-4, .grid-5 {
@@ -169,6 +185,11 @@
     .container {
         max-width: 955px;
         margin: 0 auto;
+    }
+
+    .election-grid div {
+        padding-top: 20px;
+        padding-bottom: 5px;
     }
 
 }

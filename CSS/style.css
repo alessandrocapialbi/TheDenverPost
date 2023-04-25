@@ -25,7 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.user, .grid-1-responsive-img, .responsive-election-img-div, .grid-1-responsive-img-cell, .responsive-election-img-div-cell {
+.user, .grid-1-responsive-img, .responsive-election-img, .grid-1-responsive-img-cell, .responsive-election-img-div-cell, .border-top {
     display: none;
 }
 
@@ -200,6 +200,14 @@ ul.counter li:before {
     border-top: 1px solid #d7d6d2;
 }
 
+.border-bottom {
+    border-bottom: 2px solid #7d161e;
+}
+
+.border-top {
+    border-top: 2px solid #7d161e;
+}
+
 .latest-headlines-grid span {
     border-bottom: 2px solid #7d161e;
 }
@@ -278,11 +286,6 @@ ul.counter li:before {
     color: #7d161e;
 }
 
-
-.election-grid div {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 .election-img-div {
     border-top: 2px solid #7d161e;
