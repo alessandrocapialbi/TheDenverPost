@@ -16,8 +16,6 @@
 
     .responsive-election-img-div {
         display: block;
-        max-width: 100%;
-        height: auto;
         border-top: 2px solid #7d161e;
     }
 
@@ -170,7 +168,7 @@
 
     .container {
         max-width: 955px;
-        margin-left: 10em;
+        margin: 0 auto;
     }
 
 }
