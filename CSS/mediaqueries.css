@@ -1,5 +1,6 @@
-@media (min-width: 890px) and (max-width: 1024px) {
+@media (min-width: 890px) and (max-width: 1120px) {
     .container {
+        width: auto;
         margin: 0 20px 0 20px;
     }
 
@@ -15,10 +16,13 @@
 
     .responsive-election-img-div {
         display: block;
+        max-width: 100%;
+        height: auto;
         border-top: 2px solid #7d161e;
     }
 
-    .election-grid {
+
+    .election-grid, .primary-grid, .central-news-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
@@ -36,9 +40,8 @@
         grid-column-end: span 2;
     }
 
-    .mainimg {
+    .latest-headlines-grid {
         width: 100%;
-        height: auto;
     }
 
 }
@@ -46,6 +49,7 @@
 @media screen and (max-width: 890px) {
 
     .container {
+        width: auto;
         margin: 0 20px 0 20px;
     }
 
@@ -84,6 +88,7 @@
 @media screen and (max-width: 650px) {
 
     .container {
+        width: auto;
         margin: 0 20px 0 20px;
     }
 
@@ -159,6 +164,13 @@
     .footer-logo {
         width: 60%;
     }
+}
 
+@media screen and (min-width: 1120px) {
+
+    .container {
+        max-width: 955px;
+        margin-left: 10em;
+    }
 
 }

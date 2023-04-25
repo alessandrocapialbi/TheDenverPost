@@ -146,11 +146,6 @@ ul.counter li:before {
     text-decoration: underline;
 }
 
-.container {
-    max-width: 955px;
-    margin: 0 auto;
-}
-
 .primary-grid {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
