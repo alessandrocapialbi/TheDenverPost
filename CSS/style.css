@@ -38,7 +38,7 @@ html {
     color: #7d161e;
 }
 
-.socials a:hover {
+.socials a:hover, .sign-up a:hover {
     pointer-events: none;
 }
 
@@ -146,7 +146,7 @@ ul.counter li:before {
 }
 
 .menu-item:hover {
-    background-color: red;
+    background-color: #cc0000;
     text-decoration: underline;
 }
 
@@ -240,6 +240,10 @@ ul.counter li:before {
     padding: 0.8125em 1.0625em;
     text-shadow: 0 0 1px #7d161e;
     transition: background-color 100ms linear, color 100ms linear;
+}
+
+.sign-up a{
+    color: white;
 }
 
 .newsletter .fa {
