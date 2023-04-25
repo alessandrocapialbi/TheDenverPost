@@ -158,6 +158,11 @@
         height: auto;
     }
 
+    .election-grid div {
+        padding-top: 5px;
+        padding-bottom: 15px;
+    }
+
     .grid-1, .grid-3, .grid-4, .grid-5 {
         grid-column-end: span 2;
     }
