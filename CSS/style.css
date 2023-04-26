@@ -25,7 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.user, .grid-1-responsive-img, .responsive-election-img, .grid-1-responsive-img-cell, .responsive-election-img-div-cell, .border-top, .responsive-img-grid{
+.user, .grid-1-responsive-img, .responsive-election-img, .grid-1-responsive-img-cell, .responsive-election-img-div-cell, .border-top, .responsive-img-grid {
     display: none;
 }
 
@@ -65,6 +65,8 @@ ul.counter li {
     line-height: 20px;
 }
 
+/* ROUNDED LI FOR MOST POPULAR SECTION */
+
 ul.counter li:before {
     content: counter(item);
     background-color: #7d161e;
@@ -80,7 +82,6 @@ ul.counter li:before {
     margin-right: 0.6em;
     font-size: 20px;
 }
-
 
 .nav-primary {
     background-color: white;
@@ -163,11 +164,9 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
-
 .grid-1, .grid-2 {
     padding-bottom: 25px;
 }
-
 
 .header-text {
     font-size: 25px;
@@ -238,7 +237,7 @@ ul.counter li:before {
     transition: background-color 100ms linear, color 100ms linear;
 }
 
-.sign-up a{
+.sign-up a {
     color: white;
 }
 
@@ -272,7 +271,6 @@ ul.counter li:before {
     padding: 0 5px 2px 5px;
 }
 
-
 .election-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -289,11 +287,9 @@ ul.counter li:before {
     color: #7d161e;
 }
 
-
 .election-img-div {
     border-top: 2px solid #7d161e;
 }
-
 
 h1 {
     color: #7d161e;
