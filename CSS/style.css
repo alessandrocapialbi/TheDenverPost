@@ -163,10 +163,6 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
-.grid-4 div, .grid-6 div {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
 .grid-1, .grid-2 {
     padding-bottom: 25px;
@@ -195,7 +191,7 @@ ul.counter li:before {
     font-weight: bold;
 }
 
-.latest-headlines-grid div, .grid-2 div {
+.latest-headlines-grid div {
     padding-top: 10px;
     padding-bottom: 10px;
 }
