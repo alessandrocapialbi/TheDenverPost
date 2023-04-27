@@ -118,8 +118,12 @@ ul.counter li:before {
     object-fit: contain;
 }
 
-.subscribe-login, .style-legal {
-    margin-top: 20px;
+.subscribe-login {
+    margin: 17px 30px 0 0;
+}
+
+.style-legal {
+    margin-top: 10px;
 }
 
 .subscribe-login span {
@@ -168,6 +172,10 @@ ul.counter li:before {
 .grid-1, .grid-2 {
     padding-bottom: 20px;
     border-bottom: 1px solid #ababab;
+}
+
+.central-news-grid div{
+    margin-bottom: 10px;
 }
 
 .header-bold-text {
@@ -225,10 +233,6 @@ ul.counter li:before {
     padding: 0.8125em 1.0625em;
     text-shadow: 0 0 1px #7d161e;
     transition: background-color 100ms linear, color 100ms linear;
-}
-
-.sign-up a {
-    color: white;
 }
 
 .newsletter .fa {
