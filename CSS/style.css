@@ -1,11 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Droid Sans", Helvetica, sans-serif;
-    font-size: 16px;
-}
-
 @font-face {
     font-family: DroidSans;
     src: url("fonts/DroidSans.ttf") format("truetype");
@@ -21,9 +13,20 @@
     src: url("fonts/SourceSansPro.ttf") format("truetype");
 }
 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
+
 
 .user, .grid-1-responsive-img, .responsive-election-img, .grid-1-responsive-img-cell, .responsive-election-img-div-cell, .border-top, .responsive-img-grid {
     display: none;
@@ -165,7 +168,7 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
-.centered{
+.centered {
     text-align: center !important;
 }
 
@@ -174,7 +177,7 @@ ul.counter li:before {
     border-bottom: 1px solid #ababab;
 }
 
-.central-news-grid div{
+.central-news-grid div {
     margin-bottom: 10px;
 }
 
