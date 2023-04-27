@@ -129,14 +129,14 @@ ul.counter li:before {
     padding-right: 5px;
 }
 
-.list-item {
+.right-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     float: right;
 }
 
-.menu-item {
+.right-top-item {
     background-color: #7d161e;
     color: #fff;
     text-align: center;
@@ -146,7 +146,7 @@ ul.counter li:before {
     font: normal 600 0.9375em/1.7333333333 "Droid Sans", Helvetica, sans-serif;
 }
 
-.menu-item:hover {
+.right-top-item:hover {
     background-color: #cc0000;
     text-decoration: underline;
 }
@@ -186,7 +186,7 @@ ul.counter li:before {
     grid-row-end: span 3;
 }
 
-.latest-headlines-grid a {
+.latest-headlines-grid a, .articles {
     font-weight: bold;
 }
 
@@ -253,10 +253,6 @@ ul.counter li:before {
 
 .fa:hover {
     opacity: 0.2;
-}
-
-.articles {
-    font-weight: bold;
 }
 
 .subscriber-only-tag {
