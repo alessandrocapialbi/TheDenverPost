@@ -38,14 +38,9 @@ html {
     color: #7d161e;
 }
 
-.socials a:hover, .sign-up a:hover {
-    pointer-events: none;
-}
-
 ul {
     list-style-type: none;
 }
-
 
 ul.counter {
     list-style-type: none;
@@ -53,6 +48,8 @@ ul.counter {
     -webkit-columns: 2;
     -moz-columns: 2;
 }
+
+/* AUTOMATIC COUNTER FOR THE LIST IN MOST POPULAR */
 
 ul.counter li {
     counter-increment: item;
@@ -83,7 +80,7 @@ ul.counter li:before {
     font-size: 20px;
 }
 
-.nav-primary {
+.navbar {
     background-color: white;
     color: black;
     display: flex;
@@ -104,8 +101,8 @@ ul.counter li:before {
 }
 
 .label {
-    font: normal 600 0.9375em/1.0666666667 "Droid Sans", Helvetica, sans-serif;
     padding-left: 0.25rem;
+    font-weight: bold;
     color: #0a0908;
 }
 
@@ -114,29 +111,29 @@ ul.counter li:before {
     align-self: center;
 }
 
-.nav__logo {
+.navbar__logo {
     margin: 0 auto;
     max-height: 3em;
     width: 100%;
     object-fit: contain;
 }
 
-.sub-login {
+.subscribe-login, .style-legal {
     margin-top: 20px;
 }
 
-.sub-login span {
+.subscribe-login span {
     padding-right: 5px;
 }
 
-.right-list {
+.right-top-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     float: right;
 }
 
-.right-top-item {
+.right-top-list-item {
     background-color: #7d161e;
     color: #fff;
     text-align: center;
@@ -146,7 +143,7 @@ ul.counter li:before {
     font: normal 600 0.9375em/1.7333333333 "Droid Sans", Helvetica, sans-serif;
 }
 
-.right-top-item:hover {
+.right-top-list-item:hover {
     background-color: #cc0000;
     text-decoration: underline;
 }
@@ -164,22 +161,19 @@ ul.counter li:before {
     row-gap: 15px;
 }
 
-.grid-1, .grid-2 {
-    padding-bottom: 25px;
+.centered{
+    text-align: center !important;
 }
 
-.header-text {
-    font-size: 25px;
+.grid-1, .grid-2 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ababab;
 }
 
 .header-bold-text {
     font-size: 25px;
     text-align: center;
     font-weight: bolder;
-}
-
-.centered {
-    text-align: center !important;
 }
 
 .latest-headlines-grid {
@@ -199,15 +193,11 @@ ul.counter li:before {
     border-top: 1px solid #d7d6d2;
 }
 
-.border-bottom {
-    border-bottom: 2px solid #7d161e;
-}
-
-.border-top {
+.border-top, .election-img-div {
     border-top: 2px solid #7d161e;
 }
 
-.latest-headlines-grid span {
+.latest-headlines-grid span, .border-bottom {
     border-bottom: 2px solid #7d161e;
 }
 
@@ -283,10 +273,6 @@ ul.counter li:before {
     color: #7d161e;
 }
 
-.election-img-div {
-    border-top: 2px solid #7d161e;
-}
-
 h1 {
     color: #7d161e;
     border-bottom: 2px solid #7d161e;
@@ -341,10 +327,6 @@ footer a {
     flex-wrap: wrap;
     padding: 0 20px 20px;
     border-top: 1px solid #ababab;
-}
-
-.style-legal {
-    margin-top: 10px;
 }
 
 .legal a, .legal span {

@@ -3,7 +3,7 @@
         margin: 0 20px 0 20px;
     }
 
-    .menu-item, .grid-2, .election-img-div {
+    .right-top-list-item, .grid-2, .election-img-div {
         display: none;
     }
 
@@ -74,7 +74,7 @@
         margin: 0 20px 0 20px;
     }
 
-    .election-img-div, .menu-item {
+    .election-img-div, .right-top-list-item {
         display: none;
     }
 
@@ -103,7 +103,6 @@
     .grid-3 div, .grid-4 div, .grid-5 div, .grid-6 div {
         margin: 0 15px 10px 0;
     }
-
 
     .election-grid {
         display: grid;
